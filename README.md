@@ -1,1 +1,1 @@
-# smucarskiskoki
+# Smuèarski skoki
