@@ -1,9 +1,5 @@
 import orodja
 import re
-import csv
-import requests
-import os
-import sys
 
 
 def preveri_podatke(niz):
