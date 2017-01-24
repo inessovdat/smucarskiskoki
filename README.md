@@ -23,7 +23,7 @@ Poskušala bom ugotoviti:
 - Število tekem na doloèenem prizorišèu v tem èasu, število tekem po državah
 - Razmerje med letalnicami in skakalnicami
 
-Analiza podatkov je prestavljena v datoteki Smucarskiskoki.ipyn
+Analiza podatkov je prestavljena v datoteki "Smucarskiskoki.ipynb"
 
 
 
