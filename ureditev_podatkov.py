@@ -6,15 +6,8 @@ import os
 import sys
 
 regex_tekme = re.compile(
-    #r'div class=.bloc-tab.>'
-    #r'.*?<h2 class=.bloc-title.><div class=.blue_bottom_left sprite_corner.></div>OFFICIAL RESULTS</h2>.*?'
-    #r'.*?<div class=.padding-content.>.*?'
-    #r'<h3>.*?'
     r'<a href=.http://data.fis-ski.com/global-links/statistics/overview-top-ranked-in-all-competitions.html?.*?sector=JP&place=.*?&gender=.*?>(?P<prizorisce>.*?)</a>.*?'
     r'\((?P<drzava_prizorisca>\D{3})\).*?<span class=.right.>(?P<datum>\d{2}\.\d{2}\.\d{4})</span>'
-    #r'.*?</h3>.*?'
-    #r'.*?<div class=.row.>.*?'
-    #r'.*?<div class=.small-12 large-8 columns.>.*?'
     r'.*?<h4>.*?'
     r'\D*?HS(?P<velikost_skakalnice>\d\d\d?).*?</h4>'
     r'.*?</div>.*?'
@@ -25,9 +18,7 @@ regex_tekme = re.compile(
 
 
 regex_rezultatov = re.compile(
-     #r'<tr>.'
      r'<td class=.i\d. align=.right.>&nbsp;(?P<mesto>\d\d?)</td>.<td class=.i\d. align=.right.>&nbsp;\d\d?</td>.*?'
-     #r'<td class=.i\d. align=.right.>&nbsp;\d\d</td>.'
      r'<td class=.i\d. align=.right.>&nbsp;(?P<id_tekmovalca>\d{4})</td>.*?'
      r'<td class=.i\d.><a href=.http://data.fis-ski.com/dynamic/athlete-biography.html?.*?competitorid=.*?&amp;type=result.>(?P<tekmovalec>.*?)</a>&nbsp;</td>.*?'
      r'<td class=.i\d. align=.center.>(?P<leto_rojstva>\d{4})&nbsp;</td>.'
